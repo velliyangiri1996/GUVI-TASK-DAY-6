@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About JavaScript</title>
+</head>
+<body>
+    <h2 style="color: red;">About let var and const</h2>
+
+    <p>to overcome the limitations of var , let and const are introduced 
+    var is a global scope can be re assign and also can be redeclared<br>
+    let can be re assign but cannot re declare 
+    const cannot be reassign and also cant be redeclared 
+    let and const are called as  block scope</p>
+
+    <h2 style="color: red;">spread operator/ rest operator</h2>
+    <p> Both are mentioned as ... (three dots) <br>
+        spread can be used in normal as well as arrays, can use many number of spread operators <br>
+        rest operator can be used in arrays and inside the functions  => put the rest of array elements, we cannot use many operators
+        <br> must be the last parameter of the function. if not it throws error 
+    </p>
+
+    <h2 style="color: red;">destructuring</h2>
+    <p>JavaScript expression that allows unplug the values from arrays or properties of objects.
+        datas can be extracted from array , objects , nested objects. <br>
+        if we have n number of datas , and if we want to extract some particular data of a particular person ,
+        then we can go for destructuring 
+        </p>
+    <h3 style="color: red;">Example of destructur</h3>
+    <p style="color: green; margin-left: 200px;" >
+let student = { <br>
+   name : "john",<br>
+   dept : "FSD",<br>
+   work: "guvi",<br>
+   address :{<br>
+      no:7,<br>
+      street : "patel road",<br>
+      place : "chennai"<br>
+   },<br>
+};<br>
+<br>
+let student1 = {<br>
+   name : "john1",<br>
+   dept : "FSD2",<br>
+   work: "guvi3",<br>
+   address :{<br>
+      no:75,<br>
+      street : "patel road4",<br>
+      place : "chennai5"<br>
+   },<br>
+};<br>
+<br>
+const { address } = student1 ; <br>
+console.log(address)<br>
+const { no } = address ;<br>
+console.log(no);<br>
+<br>
+let subjects  = ["tamil" , "english" , ["maths","hindi"], "science"];<br>
+const [a,b,c] = subjects;<br>
+console.log(a,b,c);<br>
+<br>
+const [m,h] = c;<br>
+console.log(m,h)<br>
+
+
+    </p>
+</center>
+</body>
+</html>
